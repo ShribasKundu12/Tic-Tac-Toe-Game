@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#9FD8CB;
+    text-align: center;
+}
+.buttons-container{
+    height: 70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.8vmin;
+}
+.button{
+    height:18vmin;
+    width: 18vmin;
+    border-radius: 20%;
+    background-color: #0E3B43;
+    border:none;
+    font-size: 8vmin;
+    color:#E3B23C;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #4B7F52;
+    color:black;
+    transition: 0.5ms;
+}
+
+.reset-btn{
+    height: 50px;
+    width:150px;
+    background-color:#E3B23C;
+    color:#0E3B43;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0.3rem black;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+.reset-btn:hover{
+    background-color: #0E3B43;
+    color: white;
+    transition: 0.5ms;
+}
+p{
+    font-size: 4rem;
+    color:darkred;
+    font-weight: 600;
+    margin-top:300px;
+    margin-bottom: 15px;
+}
+p:hover{
+    color:red;
+    transition: 0.5ms;
+}
+.new-btn{
+    height: 50px;
+    width:150px;
+    background-color:green;
+    color:white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0.3rem #0E3B43;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    cursor: pointer; 
+}
+.new-btn:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: 0.5ms;
+}
+.hide{
+    display:none;
+}
+.game-name{
+    margin:15px;
+    color:#0E3B43;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.quit-game-btn{
+    height: 50px;
+    width:150px;
+    background-color:darkred;
+    color:white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0.3rem black;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    cursor:pointer;
+}
+
+.quit-game-btn:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5ms;
+}
+@media only screen and (max-width:435px){
+    p{
+        font-size: 2.1rem;
+    }
+}
+@media only screen and (max-height:720px){
+    p{
+        margin-top: 200px;
+    }
+}
+/*for ipad pro*/
+@media only screen and  (device-width:1024px) and (device-height:1366px) and (-webkit-min-device-pixel-ratio:2){
+    .quit-game-btn{
+        margin-bottom: 735px;
+    }
+    p{
+        margin-top: 510px;
+    }
+}
